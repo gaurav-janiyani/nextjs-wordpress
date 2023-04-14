@@ -11,7 +11,7 @@ export async function getStaticProps({ params }) {
     const postData = await getSinglePost(params.postSlug);
     // const {comments, commentCount} = await getComments(params.postSlug);
 
-    let featuredImageUrl = "https://wp.abhinavr.com/wp-content/uploads/2022/12/travel_icy-polar_022K.jpg";
+    let featuredImageUrl = "http://sampleblog.ts2.in/wp-content/uploads/2023/04/pexels-photo-2387873.jpeg";
 
     if(postData.featuredImage.node.mediaDetails.sizes[0].sourceUrl) {
         featuredImageUrl = postData.featuredImage.node.mediaDetails.sizes[0].sourceUrl;
@@ -70,7 +70,7 @@ export default function Post({ postData, featuredImageUrl,
                     <h1 className="text-6xl text-center text-slate-100 relative z-10 py-8 mt-12">{postData.title}</h1>
 
                     <div className="pb-4 text-slate-100 z-10">
-                        Posted by Abhinav, last updated on <Date dateString={postData.modified} />
+                        Posted by Gaurav, last updated on <Date dateString={postData.modified} />
                     </div>
 
                     <div dangerouslySetInnerHTML={{ __html: postData.excerpt }} className="relative z-10 text-left text-slate-200 text-2xl pl-4 border-l-4 border-lime-200"/>

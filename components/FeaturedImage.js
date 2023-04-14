@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function FeaturedImage({ post }) {
     let img = '';
 
-    const defaultFeaturedImage = `http://localhost/nextwp/wp-content/uploads/2023/04/4296444-2048x1101.jpg`;
+    const defaultFeaturedImage = `http://sampleblog.ts2.in/wp-content/uploads/2023/04/pexels-photo-2387873.jpeg`;
     const defaultWidth = "300";
     const defaultHeight = "200";
 
