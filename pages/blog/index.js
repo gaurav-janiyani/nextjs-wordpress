@@ -29,7 +29,7 @@ export default function BlogHome({ allPosts }) {
         <Head>
             <title>Blog</title>
         </Head>
-        <div className="h-[50vh] min-h-[20rem] bg-[url('/home.jpg')] relative">
+        <div className="h-[30vh] min-h-[20rem] bg-[url('/home.jpg')] relative">
             <div className="absolute bg-slate-900 inset-0 z-0 opacity-40"></div>
 
             <div className="container lg:max-w-4xl mx-auto">

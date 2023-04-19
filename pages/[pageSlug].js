@@ -29,6 +29,7 @@ export async function getStaticPaths() {
 
 }
 export default function Page({ pageData }) {
+    console.log(pageData);
     return (
         <>
             <Head>
